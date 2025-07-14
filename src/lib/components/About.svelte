@@ -166,11 +166,6 @@
 		font-family: 'Space Mono', monospace;
 	}
 
-	.comment {
-		color: var(--text-fog);
-		font-style: italic;
-	}
-
 	.code-content {
 		line-height: 1.8;
 	}

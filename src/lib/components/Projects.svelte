@@ -343,23 +343,6 @@
 		opacity: 0.7;
 	}
 
-	.comment {
-		color: var(--text-fog);
-		font-style: italic;
-	}
-
-	.github-link {
-		color: var(--entropy-gold);
-		text-decoration: none;
-		margin-left: 0.5rem;
-		transition: all 0.3s ease;
-	}
-
-	.github-link:hover {
-		color: var(--signal-orange);
-		text-shadow: 0 0 8px var(--signal-orange);
-	}
-
 	@keyframes pulse {
 		0%, 100% { opacity: 1; }
 		50% { opacity: 0.5; }

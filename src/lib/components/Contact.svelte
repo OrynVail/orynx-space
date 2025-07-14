@@ -335,13 +335,6 @@
 		margin-bottom: 2rem;
 	}
 
-	.method-title {
-		color: var(--resonance-red);
-		font-size: 1rem;
-		margin-bottom: 1rem;
-		font-weight: 500;
-	}
-
 	.contact-button {
 		background: transparent;
 		border: 1px solid var(--signal-orange);

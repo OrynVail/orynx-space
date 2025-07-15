@@ -38,7 +38,7 @@
 			tech: ['Svelte', 'CSS', 'JavaScript', 'HTML'],
 			status: 'completed',
 			github: 'https://github.com/OrynVail/Startlight',
-			demo: '#',
+			demo: null,
 			custom: null
 		},
 		{
@@ -48,7 +48,7 @@
 			tech: ['Svelte', 'TailwindCSS', 'Netlify'],
 			status: 'completed',
 			github: 'https://github.com/OrynVail/orynx-init1',
-			demo: null,
+			demo: 'https://init1.netlify.app',
 			custom: null
 		},
 		{

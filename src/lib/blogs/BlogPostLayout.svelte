@@ -123,7 +123,7 @@
     background-color: rgba(19, 11, 10, 0.5); 
     padding: 2rem;
     border-radius: 4px;
-    box-shadow: 0 0 20px rgba(57, 17, 0, 0.44);
+    box-shadow: 0 0 20px rgba(57, 17, 0, 0.4);
     overflow-x: auto;
     font-size: 1rem;
     line-height: 1.6;

@@ -22,7 +22,7 @@
 
 	const projects = [
 		{
-			id: 3,
+			id: 4,
 			title: 'OrynOS',
 			description: 'A declarative, high-performance NixOS configuration built with Hyprland. Fast, sovereign, and reproducible.',
 			tech: ['NixOS Unstable', 'Hyprland', 'Nix flakes'],
@@ -32,7 +32,7 @@
 			custom: null
 		},
 		{
-			id: 2,
+			id: 3,
 			title: 'Startlight',
 			description: 'A minimal startpage made with Svelte where every new tab becomes a gateway to serenity, kissed by Catppuccins beauty.',
 			tech: ['Svelte', 'CSS', 'JavaScript', 'HTML'],
@@ -51,8 +51,18 @@
 			demo: 'https://init1.netlify.app',
 			custom: null
 		},
+    {
+			id: 2,
+			title: 'orynx.space',
+			description: 'You’re looking at it. A terminal-inspired portfolio, hand-coded in Svelte.',
+			tech: ['SvelteKit', 'CSS', 'Netlify'],
+			status: 'completed',
+			github: 'https://github.com/OrynVail/orynx-space',
+			demo: 'https://orynx.space',
+			custom: null
+		},
 		{
-			id: 5,
+			id: 6,
 			title: 'WhisprSync',
 			description: 'A seamless, platform-agnostic clipboard sync tool. Encrypted. Instant. No strings, just sync.',
 			tech: ['Python', 'Svelte', 'Electron', 'Tauri'],
@@ -62,7 +72,7 @@
 			custom: null,
 		},
 		{
-			id: 4,
+			id: 5,
 			title: 'ennéa',
 			description: 'A cycle of nine dark, standalone stories—each a mirror, a myth, a malfunction. It peers into quiet horrors and existential fractures, where time bends and meaning unravels.',
 			tech: ['Psy horror', 'Surrealism', 'Philosophical fiction'],

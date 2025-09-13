@@ -56,7 +56,7 @@
 			title: 'orynx.space',
 			description: 'You’re looking at it. A terminal-inspired portfolio, hand-coded in Svelte.',
 			tech: ['SvelteKit', 'CSS', 'Netlify'],
-			status: 'completed',
+			status: 'active',
 			github: 'https://github.com/OrynVail/orynx-space',
 			demo: 'https://orynx.space',
 			custom: null

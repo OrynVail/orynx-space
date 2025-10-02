@@ -9,8 +9,6 @@ tags:
   - surrender
 ---
 
-<div style="max-width: 600px; margin: 0 auto; text-align: left;">
-
 I sink into my bed; nothing holds—  
 a patient etherised upon the mattress,  
 spilled from my skull into the dark.  
@@ -51,5 +49,5 @@ not light but the smell of scorched feathers.
 Nothing holds me in this endless sum.  
 I am — _embers in the sun._  
 
-</div>
+
 ---

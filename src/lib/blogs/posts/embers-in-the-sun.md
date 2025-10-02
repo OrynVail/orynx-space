@@ -13,13 +13,7 @@ I sink into my bed; nothing holds—
 a patient etherised upon the mattress,  
 spilled from my skull into the dark.  
 Language leaks from the sockets.  
-The abyss chews without sound.  
-
-The quilt is a tide of ash and feathers,  
-a dead bird’s wing across my chest.  
-Memories curdle at the edge of breath,  
-thin soup in a hospital tray.  
-Gravity claws what my hands can’t keep.  
+The abyss chews without sound.   
 
 The ceiling hangs where the sky should be,  
 its beams black with old smoke.  
@@ -40,7 +34,8 @@ Even silence has wires here.
 
 In this space between drowning and dream  
 I find no comfort, only the falling.  
-Between breath and surrender, between weight and release  
+Between breath and surrender,  
+Between weight and release,  
 I sink like a knife into buttered earth.  
 
 I sink and sink until darkness comes,  

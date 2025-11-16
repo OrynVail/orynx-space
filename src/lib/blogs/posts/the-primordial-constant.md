@@ -86,8 +86,6 @@ But if you sit still long enough, it might just let you remember what you were *
 
 > This is not about darkness as metaphor. This is about recognizing the ground of being itself. The unchanging constant that makes all change possible.
 
-This is not an aesthetic posture or poetic drama. It is a reckoning. This is a return to the **limit** of what can be spoken. 
-
 The light will fade. The stars will die. The universe will expand into cold silence.
 
 But darkness?

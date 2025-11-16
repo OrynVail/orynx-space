@@ -55,8 +55,5 @@ Every hoarded billion means another undiscovered talent lost. A generation's wor
 
 ## The Verdict
 
-The ten don’t just own fortunes. They own the curvature of human possibility. The longer this mass concentrates, the more our brightest futures orbit endlessly, unreachable. This isn’t inequality. This isn’t even economics.
+The ten don’t just own fortunes. They own the curvature of human possibility. The longer this mass concentrates, the more our brightest futures orbit endlessly, unreachable.
 
-> _This is gravity._
-
-And once the horizon locks, no light escapes.

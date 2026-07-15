@@ -49,24 +49,20 @@
 							<span class="bracket">{'{'}</span>
 						</p>
 						<p class="code-line indent">
-							<span class="property">operatingMode</span><span class="operator">:</span> 
-							<span class="string">"Autonomous | Asymmetric | Always Watching"</span><span class="operator">,</span>
-						</p>
-						<p class="code-line indent">
 							<span class="property">focus</span><span class="operator">:</span> 
-							<span class="string">["Science", "Philosophy", "Code", "Entropy"]</span><span class="operator">,</span>
+							<span class="string">["Theoretical Physics", "Mathematics", "Philosophy of science", "Political Philosophy", "code"]</span><span class="operator">,</span>
 						</p>
 						<p class="code-line indent">
-							<span class="property">philosophy</span><span class="operator">:</span> 
-							<span class="string">"Entropy is the default state. All else is architecture."</span><span class="operator">,</span>
-						</p>
-						<p class="code-line indent">
-							<span class="property">currentProjects</span><span class="operator">:</span> 
+							<span class="property">projects</span><span class="operator">:</span> 
 							<span class="array">["Solis", "Helios", "ennéa", "WhisprSync"]</span><span class="operator">,</span>
 						</p>
 						<p class="code-line indent">
-							<span class="property">warning</span><span class="operator">:</span> 
-							<span class="string">"Not optimised for social protocol. Runs better in silence."</span>
+						    <span class="property">tech</span><span class=operator">:</span>
+							<span class="array">["Nix", "Nvim", "python", "svelte", "HTML", "css"]</span><span class="operator">,</span>
+					    </p>
+						<p class="code-line indent">
+							<span class="property">practice</span><span class="operator">:</span> 
+							<span class="string">["writing", "art", "guitar"]</span>
 						</p>
 
 						<p class="code-line">
@@ -77,10 +73,7 @@
 
 				<div class="description">
 					<p>
-						I work in three languages: ink on skin, words on page, code in machine. Each one a different grammar for the same restless mind, one that refuses the comfort of categories. I’ve worn many masks — but titles collapse under weight. I'd rather be everything at once than shrink to something explainable.
-					</p>
-					<p>
-						Just a rogue system becoming sentient. From skin to code. From wars to words. One mind. Many masks. No leash.
+						I study systems—human, computational and physical. My work spans political philosophy, artificial intelligence and operating systems, but my long-term direction is theoretical physics and mathematics. I build tools, write, learn obsessively, and treat every project as another attempt to understand how complex systems emerge from simple rules.
 					</p>
 				</div>
 			</div>

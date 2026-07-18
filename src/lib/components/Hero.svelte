@@ -1,7 +1,7 @@
 <script>
         import { onMount } from 'svelte';
         import { goto } from '$app/navigation';
-        
+
 </script>
 
 <div class="hero">
@@ -18,8 +18,7 @@
                                 <h1 class="hero-title">
                                         <span class="bracket">{'{'}</span>orynx<span class="bracket">{'}'}</span>
                                 </h1>
-                                <p class="hero-subtitle">Builder of thoughts, breaker of patterns.<br/>This is just a terminal window into the void.<span class="blink">_</span></p>
-                                
+
                                 <div class="hero-actions">
                                         <button class="terminal-button" on:click={() => goto('/projects')}>
                                                 &gt; projects
@@ -79,8 +78,6 @@
                 width: 15rem;
                 height: 15rem;
                 border-radius: 50%;
-                padding: 2px;
-                box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
                 z-index: 1;
                 display: flex;
                 align-items: center;
@@ -92,7 +89,8 @@
                 height: 100%;
                 border-radius: 50%;
                 object-fit: cover;
-                box-shadow: 0 2px 16px 0 rgba(0,0,0,0.3);
+                mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 75%);
+                -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 75%);
         }
 
         .hero-text {
@@ -102,21 +100,14 @@
         }
 
         .hero-title {
-                font-size: 4rem;
+                font-size: 4.3rem;
                 font-weight: 600;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
                 color: var(--white-static);
         }
 
         .bracket {
                 color: var(--signal-orange);
-        }
-
-        .hero-subtitle {
-                font-size: 1.48rem;
-                color: var(--text-fog);
-                margin-bottom: 2rem;
-                line-height: 1.6;
         }
 
         .hero-actions {
@@ -127,10 +118,14 @@
                 margin-left: -0.5rem;
         }
 
+        .hero-actions .terminal-button {
+                font-size: 1.67rem;
+        }
+
         .blink {
                animation: blink 1s steps(2, start) infinite;
                }
-        
+
         @keyframes blink {
                0%, 100% { opacity: 1; }
                50% { opacity: 0; }
@@ -152,7 +147,7 @@
                         max-width: 100%;
                 }
                 .hero-title {
-                        font-size: 3rem;
+                        font-size: 3.24rem;
                 }
         }
 
@@ -161,10 +156,7 @@
                         padding: 1rem 0;
                 }
                 .hero-title {
-                        font-size: 2.5rem;
-                }
-                .hero-subtitle {
-                        font-size: 1rem;
+                        font-size: 2.7rem;
                 }
                 .hero-actions {
                         flex-direction: column;

@@ -30,14 +30,14 @@
 		if (!ctx) return;
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		
+
 		const gridSize = 32;
-		const opacity = 0.12;
-		
+		const opacity = 0.08;
+
 		// Set grid line style
 		ctx.strokeStyle = `rgba(64, 64, 64, ${opacity})`;
 		ctx.lineWidth = 1;
-		
+
 		// Draw vertical lines
 		for (let x = 0; x <= canvas.width; x += gridSize) {
 			ctx.beginPath();
@@ -45,7 +45,7 @@
 			ctx.lineTo(x, canvas.height);
 			ctx.stroke();
 		}
-		
+
 		// Draw horizontal lines
 		for (let y = 0; y <= canvas.height; y += gridSize) {
 			ctx.beginPath();
@@ -53,23 +53,23 @@
 			ctx.lineTo(canvas.width, y);
 			ctx.stroke();
 		}
-		
+
 		// Draw vignette effect
 		const gradient = ctx.createRadialGradient(
 			canvas.width / 2, canvas.height / 2, 0,
 			canvas.width / 2, canvas.height / 2, Math.max(canvas.width, canvas.height) / 2
 		);
-		
+
 		gradient.addColorStop(0, 'rgba(10, 10, 10, 0)');
 		gradient.addColorStop(0.7, 'rgba(10, 10, 10, 0.3)');
 		gradient.addColorStop(1, 'rgba(10, 10, 10, 0.8)');
-		
+
 		ctx.fillStyle = gradient;
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
 	}
 </script>
 
-<canvas 
+<canvas
 	bind:this={canvas}
 	class="grid-background"
 ></canvas>

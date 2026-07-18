@@ -57,7 +57,7 @@
 							<span class="array">["Solis", "Helios", "ennéa", "WhisprSync"]</span><span class="operator">,</span>
 						</p>
 						<p class="code-line indent">
-						    <span class="property">tech</span><span class=operator">:</span>
+						    <span class="property">tech</span><span class="operator">:</span>
 							<span class="array">["Nix", "Nvim", "python", "svelte", "HTML", "css"]</span><span class="operator">,</span>
 					    </p>
 						<p class="code-line indent">

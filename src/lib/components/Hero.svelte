@@ -11,7 +11,7 @@
                         <div class="avatar-container">
                                 <div class="avatar-glow"></div>
                                 <div class="avatar-img-wrapper">
-                                        <img src="/img.webp" alt="Oryn Vail profile photo, creator of orynx.space" class="avatar-img" />
+                                        <img src="/img.webp" alt="Oryn Vail, creator of orynx.space" class="avatar-img" />
                                 </div>
                         </div>
                         <div class="hero-text">

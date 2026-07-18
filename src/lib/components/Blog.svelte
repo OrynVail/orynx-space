@@ -158,14 +158,6 @@
 .blog-card:hover::before {
   transform: scaleX(1);
 }
-.blog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 .blog-title {
   font-size: 1.5rem;
   color: var(--white-static);

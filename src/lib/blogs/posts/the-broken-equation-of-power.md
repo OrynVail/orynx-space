@@ -16,9 +16,6 @@ Mathematically, a function is simple. It’s a relationship where every input ge
 
 No duplicates, no leftovers, no cheating.
 
-
-### Formally
-
 A function `f` is a subset of a Cartesian product `A × B`, where for every `x` in `A`, there exists exactly one `y` in `B` such that `(x, y) ∈ f`.
 
 
@@ -26,7 +23,7 @@ A function `f` is a subset of a Cartesian product `A × B`, where for every `x` 
 ∀ x ∈ A, ∃! y ∈ B
 ```
 
-**Translation?** 
+**Translation?**
 Every element in the domain is mapped to a unique counterpart in the codomain.
 Clean. Elegant. Balanced
 
@@ -60,7 +57,7 @@ It’s a corrupted relation where:
 
 In every balanced system—biological, ecological, even quantum—resources flow like a proper function. Each node gets its share. No domination, no dangling variables.
 
-But somewhere along the way, we rewrote the logic. 
+But somewhere along the way, we rewrote the logic.
 
 The few started collecting codomain values like trophies,
 and the many became **phantom inputs**, present in the domain, but **never mapped**.
@@ -80,8 +77,8 @@ The world has become a relation with:
 
 - **Zero Chance at Bijectivity:** True balance is a mathematical impossibility.
 
-If our world were a program, we’d throw a `DomainError` and refactor the code. 
-Instead? 
+If our world were a program, we’d throw a `DomainError` and refactor the code.
+Instead?
 we call it **normal**.
 
 ---
@@ -90,7 +87,7 @@ we call it **normal**.
 
 Maybe it’s time to rewrite the function.
 
-Because the longer we treat this corrupted mapping as natural, the deeper the null set grows. 
+Because the longer we treat this corrupted mapping as natural, the deeper the null set grows.
 And what does nature do with imbalance?
 
 It doesn’t ask politely.

@@ -1,0 +1,141 @@
+.document {
+	max-width: 80ch;
+	margin: 4rem auto;
+	padding: 2rem;
+	color: var(--white-static);
+}
+
+/* Document header */
+.document-header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.document-title {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	color: var(--entropy-gold);
+	letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.document-meta {
+	font-size: 1.05rem;
+	color: var(--text-fog);
+	margin-bottom: 2rem;
+	opacity:75%;
+	padding-bottom: 2.5rem;
+}
+
+/* Main content section */
+.document-content {
+	line-height: 1.8;
+	font-size: 1.1rem;
+	color: var(--white-static);
+}
+
+/* Styling for headings */
+.document-content h1,
+.document-content h2,
+.document-content h3 {
+	font-weight: 600;
+	color: var(--white-static);
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.4;
+}
+
+.document-content h1 {
+	font-size: 2rem;
+}
+
+.document-content h2 {
+	font-size: 1.75rem;
+}
+
+.document-content h3 {
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+/* Styling for paragraphs */
+.document-content p {
+	margin-bottom: 1.4rem;
+	font-size: 1.15rem;
+	color: var(--text-fog);
+	white-space: pre-line;
+}
+
+/* Styling for links */
+.document-content a {
+	color: var(--resonance-red);
+	text-decoration: none;
+	border-bottom: 2px solid var(--resonance-red);
+	transition: all 0.3s ease;
+}
+
+.document-content a:hover {
+	color: var(--signal-orange);
+	border-bottom-color: var(--signal-orange);
+	background-color: rgba(255, 165, 0, 0.15);
+}
+
+/* Styling for inline code */
+.document-content code {
+	background-color: var(--event-horizon);
+	color: rgba(255, 71, 26, 1);
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	font-size: 1.1rem;
+}
+
+/* Styling for horizontal rules */
+.document-content hr {
+	border: none;
+	border-top: 1px solid var(--grid-fade);
+	margin: 3rem 0;
+}
+
+/* Styling for blockquote */
+.document-content blockquote {
+	margin-left: 0.5rem;
+	margin-top: 2.5rem;
+	padding-left: 1.5rem;
+	border-left: 3px solid var(--resonance-red);
+	font-style: italic;
+	color: var(--text-fog);
+	margin-bottom: 2rem;
+}
+
+/* Styling for code blocks */
+.document-content pre {
+	background-color: rgba(19, 11, 10, 0.5);
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(57, 17, 0, 0.4);
+	overflow-x: auto;
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 2.5rem;
+	border: 1px solid var(--grid-fade);
+	border-left: 4px solid var(--ghost-purple);
+}
+
+/* Ensure the code inside pre tags doesn't get the inline code styling */
+.document-content pre code {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+}
+
+.document-footer {
+	margin-top: 4rem;
+	padding-top: 2rem;
+	border-top: 1px solid var(--grid-fade);
+	text-align: center;
+}
+
+.document-copyright {
+	font-size: 0.9rem;
+	color: var(--text-fog);
+}

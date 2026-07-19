@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import BlogPostLayout from '$lib/blogs/BlogPostLayout.svelte';
+  import DocumentLayout from '$lib/blogs/DocumentLayout.svelte';
   import type { PageData } from './$types';
 
   export let data: PageData;
@@ -31,9 +31,9 @@
 
 {#if PostComponent}
   <div class="blog-slug-content">
-    <BlogPostLayout frontmatter={post}>
+    <DocumentLayout frontmatter={post}>
       <svelte:component this={PostComponent} />
-    </BlogPostLayout>
+    </DocumentLayout>
   </div>
 {:else}
   <p>Loading...</p>

@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	let aboutVisible = false;
-	let aboutContainer;
+	let aboutContainer: HTMLElement | undefined = undefined;
 
 	const timeline = [
 		{ year: '2025', event: 'Emergence Protocol', description: 'The void became writable.' },

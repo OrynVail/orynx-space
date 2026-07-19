@@ -1,19 +1,29 @@
 /* Global Styles */
 :root {
-  --void-black:      #0a0a0c;    /* Deeper, colder void */
-  --event-horizon:   #130b0a;    /* Subtle crimson undertone, base of the bleed */
-  --blackhole-glow:  #391100;    /* Radiating red-orange glow */
-  --signal-orange:   #ff471a;    /* Action/highlight — button hover, accent lines */
-  --grid-fade:       #231818;    /* Soft grid lines / UI separators */
-  --text-fog:        #a09690;    /* Muted grey-white text for subtitles / paragraphs */
-  --white-static:    #e7e7e7;    /* Main text — clean but not pure white */
-  --resonance-red:   #ff2e63;    /* Pulse or flicker tone */
-  --ghost-purple:    #743d60;    /* Optional alt link or button secondary */
-  --entropy-gold:    #ffb347;    /* For rare UI elements that must draw attention */
-  
-  /* Font families */
-  --font-mono: 'Space Mono', monospace;
-  --font-grotesk: 'Space Grotesk', sans-serif;
+        --void-black: #0a0a0c;
+        /* Deeper, colder void */
+        --event-horizon: #130b0a;
+        /* Subtle crimson undertone, base of the bleed */
+        --blackhole-glow: #391100;
+        /* Radiating red-orange glow */
+        --signal-orange: #ff471a;
+        /* Action/highlight — button hover, accent lines */
+        --grid-fade: #231818;
+        /* Soft grid lines / UI separators */
+        --text-fog: #a09690;
+        /* Muted grey-white text for subtitles / paragraphs */
+        --white-static: #e7e7e7;
+        /* Main text — clean but not pure white */
+        --resonance-red: #ff2e63;
+        /* Pulse or flicker tone */
+        --ghost-purple: #743d60;
+        /* Optional alt link or button secondary */
+        --entropy-gold: #ffb347;
+        /* For rare UI elements that must draw attention */
+
+        /* Font families */
+        --font-mono: 'Space Mono', monospace;
+        --font-grotesk: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -67,7 +77,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
         font-weight: 600;
         line-height: 1.2;
 }
@@ -85,8 +100,15 @@ a:hover {
 
 /* Animations */
 @keyframes glow {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
+
+        0%,
+        100% {
+                opacity: 1;
+        }
+
+        50% {
+                opacity: 0.3;
+        }
 }
 
 @keyframes fadeInUp {
@@ -94,6 +116,7 @@ a:hover {
                 opacity: 0;
                 transform: translateY(30px);
         }
+
         to {
                 opacity: 1;
                 transform: translateY(0);
@@ -101,16 +124,17 @@ a:hover {
 }
 
 @keyframes fadeInScale {
-	from {
-		opacity: 0;
-		transform: scale(0.96);
-		filter: blur(4px);
-	}
-	to {
-		opacity: 1;
-		transform: scale(1);
-		filter: blur(0);
-	}
+        from {
+                opacity: 0;
+                transform: scale(0.96);
+                filter: blur(4px);
+        }
+
+        to {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0);
+        }
 }
 
 .fade-in-up {
@@ -193,23 +217,46 @@ a:hover {
         text-align: center;
 }
 
-.mb-1 { margin-bottom: 0.5rem; }
-.mb-2 { margin-bottom: 1rem; }
-.mb-3 { margin-bottom: 1.5rem; }
-.mb-4 { margin-bottom: 2rem; }
+.mb-1 {
+        margin-bottom: 0.5rem;
+}
 
-.mt-1 { margin-top: 0.5rem; }
-.mt-2 { margin-top: 1rem; }
-.mt-3 { margin-top: 1.5rem; }
-.mt-4 { margin-top: 2rem; }
+.mb-2 {
+        margin-bottom: 1rem;
+}
+
+.mb-3 {
+        margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+        margin-bottom: 2rem;
+}
+
+.mt-1 {
+        margin-top: 0.5rem;
+}
+
+.mt-2 {
+        margin-top: 1rem;
+}
+
+.mt-3 {
+        margin-top: 1.5rem;
+}
+
+.mt-4 {
+        margin-top: 2rem;
+}
 
 .header-spacer {
-  height: 4rem;
+        height: 7rem;
 }
+
 @media (max-width: 768px) {
-  .header-spacer {
-    height: 6rem;
-  }
+        .header-spacer {
+                height: 7rem;
+        }
 }
 
 /* Responsive */
@@ -217,7 +264,7 @@ a:hover {
         .container {
                 padding: 0 1rem;
         }
-        
+
         .section-padding {
                 padding: 2rem 0;
         }

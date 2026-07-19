@@ -24,7 +24,8 @@
 		{
 			id: 4,
 			title: 'OrynOS',
-			description: 'A declarative, high-performance NixOS configuration built with Hyprland. Fast, sovereign, and reproducible.',
+			description:
+				'A declarative, high-performance NixOS configuration built with Hyprland. Fast, sovereign, and reproducible.',
 			tech: ['NixOS Unstable', 'Hyprland', 'Nix flakes'],
 			status: 'active',
 			github: 'https://github.com/OrynVail/OrynOS',
@@ -34,7 +35,8 @@
 		{
 			id: 3,
 			title: 'Startlight',
-			description: 'A minimal startpage made with Svelte where every new tab becomes a gateway to serenity, kissed by Catppuccins beauty.',
+			description:
+				'A minimal startpage made with Svelte where every new tab becomes a gateway to serenity, kissed by Catppuccins beauty.',
 			tech: ['Svelte', 'CSS', 'JavaScript', 'HTML'],
 			status: 'completed',
 			github: 'https://github.com/OrynVail/Startlight',
@@ -44,14 +46,15 @@
 		{
 			id: 1,
 			title: 'init-1',
-			description: 'init1 is an ultra-minimal, terminal-inspired landing page. Fast, responsive, and distractionless.',
+			description:
+				'init1 is an ultra-minimal, terminal-inspired landing page. Fast, responsive, and distractionless.',
 			tech: ['Svelte', 'TailwindCSS', 'Netlify'],
 			status: 'completed',
 			github: 'https://github.com/OrynVail/orynx-init1',
 			demo: 'https://init1.netlify.app',
 			custom: null
 		},
-    {
+		{
 			id: 2,
 			title: 'orynx.space',
 			description: 'You’re looking at it. A terminal-inspired portfolio, hand-coded in Svelte.',
@@ -64,22 +67,24 @@
 		{
 			id: 6,
 			title: 'WhisprSync',
-			description: 'A seamless, platform-agnostic clipboard sync tool. Encrypted. Instant. No strings, just sync.',
+			description:
+				'A seamless, platform-agnostic clipboard sync tool. Encrypted. Instant. No strings, just sync.',
 			tech: ['Python', 'Svelte', 'Electron', 'Tauri'],
 			status: 'in-progress',
 			github: null,
 			demo: null,
-			custom: null,
+			custom: null
 		},
 		{
 			id: 5,
 			title: 'ennéa',
-			description: 'A cycle of nine dark, standalone stories—each a mirror, a myth, a malfunction. It peers into quiet horrors and existential fractures, where time bends and meaning unravels.',
+			description:
+				'A cycle of nine dark, standalone stories—each a mirror, a myth, a malfunction. It peers into quiet horrors and existential fractures, where time bends and meaning unravels.',
 			tech: ['Psy horror', 'Surrealism', 'Philosophical fiction'],
 			status: 'in-progress',
 			github: null,
 			demo: null,
-			custom: null,
+			custom: null
 		}
 	];
 
@@ -127,21 +132,15 @@
 				projects
 				<span class="section-suffix">.vault()</span>
 			</h2>
-			<p class="section-description">
-				Fragments from a mind wandering the seams of logic, matter, and meaning.
-			</p>
 		</div>
 
 		<div class="projects-grid" class:visible={projectsVisible}>
 			{#each sortedProjects as project, index}
-				<div 
-					class="project-card"
-					style="animation-delay: {index * 150}ms"
-				>
+				<div class="project-card" style="animation-delay: {index * 150}ms">
 					<div class="project-header">
 						<h3 class="project-title">{project.title}</h3>
 						<div class="project-status">
-							<span 
+							<span
 								class="status-indicator"
 								style="background-color: {getStatusColor(project.status as Project['status'])}"
 							></span>
@@ -215,14 +214,6 @@
 
 	.section-suffix {
 		color: var(--ghost-purple);
-	}
-
-	.section-description {
-		font-size: 1.1rem;
-		color: var(--text-fog);
-		max-width: 600px;
-		margin: 0 auto;
-		line-height: 1.6;
 	}
 
 	.projects-grid {
@@ -354,8 +345,13 @@
 	}
 
 	@keyframes pulse {
-		0%, 100% { opacity: 1; }
-		50% { opacity: 0.5; }
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
 	}
 
 	@keyframes fadeInUp {

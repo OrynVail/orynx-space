@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { isMenuOpen } from '$lib/stores.js';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { isMenuOpen } from '$lib/stores.js';
 
 	const navItems = [
 		// { id: '/', label: 'home' },
 		{ id: '/projects', label: 'projects' },
 		{ id: '/blog', label: 'blog' },
 		{ id: '/about', label: 'about' },
-		{ id: '/contact', label: 'contact' }
+		{ id: '/contact', label: 'connect' }
 	];
 
 	function handleNavClick(path: string) {
@@ -17,15 +17,20 @@
 	}
 
 	function toggleMenu() {
-		isMenuOpen.update(open => !open);
+		isMenuOpen.update((open) => !open);
 	}
 </script>
 
 <header class="header">
-	<div class="container nav-center">
+	<div class="nav-center container">
 		<div class="nav-container">
-			<!-- Logo/Brand -->
-			<button class="brand" aria-label="Go to home page" on:click={() => goto('/')} style="cursor:pointer; background:none; border:none; padding:0;">
+			<!-- Logo -->
+			<button
+				class="brand"
+				aria-label="Go to home page"
+				on:click={() => goto('/')}
+				style="cursor:pointer; background:none; border:none; padding:0;"
+			>
 				<span class="bracket">{'{'}</span>
 				<span class="brand-text">orynx</span>
 				<span class="bracket">{'}'}</span>
@@ -34,13 +39,13 @@
 			<!-- Desktop Navigation -->
 			<nav class="nav-desktop">
 				{#each navItems as item}
-					<button 
-						class="nav-link" 
+					<button
+						class="nav-link"
 						class:active={$page.url.pathname === item.id}
 						on:click={() => handleNavClick(item.id)}
 						aria-label={item.label}
 					>
-					    <span class="nav-prefix">&gt;</span>
+						<span class="nav-prefix">&gt;</span>
 						{item.label}
 					</button>
 				{/each}
@@ -57,8 +62,8 @@
 			<nav class="nav-mobile nav-mobile-overlay">
 				<div class="nav-mobile-links">
 					{#each navItems as item}
-						<button 
-							class="nav-link-mobile" 
+						<button
+							class="nav-link-mobile"
 							class:active={$page.url.pathname === item.id}
 							on:click={() => handleNavClick(item.id)}
 							aria-label={item.label}
@@ -81,7 +86,7 @@
 		z-index: 1000;
 		background: transparent;
 		backdrop-filter: blur(7px);
-		height: 5.5rem;
+		height: 6.5rem;
 	}
 
 	.nav-center {
@@ -104,7 +109,9 @@
 		font-size: 2rem;
 		font-weight: 700;
 		color: var(--signal-orange);
-		font-family: Space Mono, monospace;
+		font-family:
+			Space Mono,
+			monospace;
 	}
 
 	.bracket {
@@ -281,7 +288,8 @@
 			color: var(--text-fog);
 			padding: 1.2rem 0;
 		}
-		.nav-link-mobile.active, .nav-link-mobile:hover {
+		.nav-link-mobile.active,
+		.nav-link-mobile:hover {
 			color: var(--signal-orange);
 		}
 	}

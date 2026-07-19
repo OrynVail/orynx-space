@@ -1,6 +1,9 @@
 // Import all markdown files in the posts directory as Svelte components
 export const postFiles = import.meta.glob('./posts/*.md', { eager: true });
 
+/**
+ * @param {string} str
+ */
 function normalizeSlug(str) {
   return str
     .toLowerCase()
@@ -15,7 +18,7 @@ function normalizeSlug(str) {
  * @returns {Array<{ title: string, description: string, date: string, slug: string, tags?: string[], component: any }>}
  */
 export function getAllPosts() {
-  return Object.entries(postFiles)
+  const posts = Object.entries(postFiles)
     .map(([path, mod]) => {
       /** @type {{ metadata?: any, default: any }} */
       const module = /** @type {any} */ (mod);
@@ -27,12 +30,18 @@ export function getAllPosts() {
         component: module.default
       };
     })
-    .filter(post => post.title && post.date) // Only include posts with required metadata
-    .sort((a, b) => {
-      const dateA = a.date ? new Date(a.date).getTime() : 0;
-      const dateB = b.date ? new Date(b.date).getTime() : 0;
-      return dateB - dateA;
-    });
+    .filter(post => post.title && post.date); // Only include posts with required metadata
+
+  posts.sort((a, b) => {
+    const dateA = a.date ? new Date(a.date).getTime() : 0;
+    const dateB = b.date ? new Date(b.date).getTime() : 0;
+    return dateB - dateA;
+  });
+
+  return posts.map(post => ({
+    ...post,
+    date: post.date.replace(/-/g, '.')
+  }));
 }
 
 /**

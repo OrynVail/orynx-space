@@ -1,14 +1,16 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
-	let canvas;
-	let ctx;
-	let animationFrame;
+	let canvas: HTMLCanvasElement | undefined = undefined;
+	let ctx: CanvasRenderingContext2D | null = null;
+	let animationFrame: number | undefined = undefined;
 
 	onMount(() => {
-		ctx = canvas.getContext('2d');
-		resizeCanvas();
-		drawGrid();
+		if (canvas) {
+			ctx = canvas.getContext('2d');
+			resizeCanvas();
+			drawGrid();
+		}
 
 		window.addEventListener('resize', resizeCanvas);
 
@@ -21,13 +23,14 @@
 	});
 
 	function resizeCanvas() {
+		if (!canvas) return;
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 		drawGrid();
 	}
 
 	function drawGrid() {
-		if (!ctx) return;
+		if (!ctx || !canvas) return;
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 

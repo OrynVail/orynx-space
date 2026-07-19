@@ -12,7 +12,7 @@ export const load: PageServerLoad = async ({ params }) => {
   if (!post) throw error(404, 'Post not found');
 
   // Only return serializable metadata, not the component itself
-  const { component, ...metadata } = post;
+  const { component, ...metadata } = post as { component?: any; [key: string]: any };
 
   return {
     post: metadata

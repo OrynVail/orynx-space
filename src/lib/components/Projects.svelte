@@ -310,7 +310,7 @@
 
 	.tech-tag {
 		background: var(--grid-fade);
-		color: var(--resonance-red);
+		color: var(--ghost-purple);
 		padding: 0.3rem 0.8rem;
 		font-size: 0.85rem;
 		border: 1px solid var(--grid-fade);
@@ -318,7 +318,7 @@
 	}
 
 	.tech-tag:hover {
-		border-color: var(--resonance-red);
+		border-color: var(--ghost-purple);
 		box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
 	}
 

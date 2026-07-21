@@ -21,7 +21,7 @@ Fingers trace a seam that isn’t there—
 the stitch between body and ghost,
 between waking and whatever redeems.
 
-I am anchor and the falling stone,
+I am the anchor and the stone,
 swallowing echoes.
 The hush of the tide, the pull of the deep—
 names rot in my teeth.
@@ -36,6 +36,8 @@ In this space between drowning and dream
 I find no comfort, only the falling.
 Between breath and surrender,
 between weight and release—
+
+I sink.
 
 I sink and sink until darkness comes,
 the only language my soul remembers,
